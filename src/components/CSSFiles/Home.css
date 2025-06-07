@@ -1,0 +1,216 @@
+.pdf-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pdf-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Inline Inputs */
+.input-group-inline {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: flex-end;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.input-wrapper label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #34495e;
+}
+
+.pdf-container input[type="file"],
+.question-count-input,
+.question-type-select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Textarea */
+.pdf-container textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Submit Button */
+.pdf-container button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pdf-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .input-group-inline {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .pdf-container textarea {
+    font-size: 14px;
+  }
+
+  .pdf-container button {
+    font-size: 14px;
+  }
+}
+.dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.dialog-box {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.dialog-box h3 {
+  color: #e53935;
+  margin-bottom: 10px;
+}
+
+.dialog-box ul {
+  text-align: left;
+  padding-left: 20px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.dialog-box button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dialog-box button:hover {
+  background-color: #0056b3;
+}
+
+/* Dark Theme for Home Component */
+
+body.dark-theme .pdf-container {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  color: #ddd;
+}
+
+body.dark-theme .pdf-container h2 {
+  color: #ddd;
+}
+
+body.dark-theme .pdf-container label {
+  color: #ccc;
+}
+
+body.dark-theme .pdf-container input[type="file"],
+body.dark-theme .question-count-input,
+body.dark-theme .question-type-select,
+body.dark-theme .pdf-container textarea {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #eee;
+}
+
+body.dark-theme .pdf-container input[type="file"]::file-selector-button {
+  background-color: #555;
+  color: #eee;
+  border: none;
+}
+
+body.dark-theme .pdf-container button {
+  background-color: #007bff;
+  color: white;
+}
+
+body.dark-theme .pdf-container button:hover {
+  background-color: #0056b3;
+}
+
+body.dark-theme .dialog-backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.dark-theme .dialog-box {
+  background-color: #2c2c2c;
+  color: #eee;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-theme .dialog-box h3 {
+  color: #ff6f61;
+}
+
+body.dark-theme .dialog-box ul {
+  color: #ccc;
+}
+
+body.dark-theme .dialog-box button {
+  background-color: #007bff;
+  color: white;
+}
+
+body.dark-theme .dialog-box button:hover {
+  background-color: #0056b3;
+}

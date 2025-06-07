@@ -1,0 +1,119 @@
+.about-page {
+  max-width: 850px;
+  margin: auto;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  animation: slideUp 0.6s ease;
+  margin-top: 20px;
+}
+
+.animated-title {
+  color: #2c3e50;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.project-section, .features-section, .dev-info {
+  background-color: #f5faff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.project-section:hover,
+.features-section:hover,
+.dev-info:hover {
+  transform: scale(1.02);
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.feature-list li:hover {
+  color: #007bff;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Dark Mode Styles for About Page */
+body.dark-theme .about-page {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+}
+
+body.dark-theme .animated-title {
+  color: #f0c93d; /* A warm gold/yellow for titles */
+}
+
+body.dark-theme .project-section,
+body.dark-theme .features-section,
+body.dark-theme .dev-info {
+  background-color: #2c2c2c;
+  box-shadow: none;
+}
+
+body.dark-theme .project-section:hover,
+body.dark-theme .features-section:hover,
+body.dark-theme .dev-info:hover {
+  transform: scale(1.02);
+  background-color: #3a3a3a;
+}
+
+body.dark-theme .feature-list li {
+  color: #ccc;
+}
+
+body.dark-theme .feature-list li:hover {
+  color: #4ea1f7; /* lighter blue hover */
+}
+
+body.dark-theme a {
+  color: #6ca0ff;
+}
+
+body.dark-theme a:hover {
+  text-decoration: underline;
+  color: #a3c1ff;
+}
