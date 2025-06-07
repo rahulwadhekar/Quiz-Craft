@@ -324,7 +324,6 @@ body, html {
   background-color: #285a9e;
 }
 
-/* Adjust scrollbar colors if you want */
 .dark-theme .scrollbar-thin::-webkit-scrollbar-thumb {
   background-color: #3a7bd5;
 }

@@ -4,9 +4,9 @@ const PdfContext = createContext();
 
 export const PdfProvider = ({ children }) => {
   const [pdfText, setPdfText] = useState("");
-  const [questionCount, setQuestionCount] = useState(5); // default to 5
-    const [questionList, setQuestionList] = useState([]); // ✅ new
-  const [questionType, setQuestionType] = useState("single"); // new state
+  const [questionCount, setQuestionCount] = useState(5); 
+    const [questionList, setQuestionList] = useState([]); 
+  const [questionType, setQuestionType] = useState("truefalse");
 
 
   return (

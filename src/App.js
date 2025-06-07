@@ -18,9 +18,13 @@ function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
+    if (window.location.pathname !== "/") {
+      window.location.replace("/");
+    }
+
     const timer = setTimeout(() => {
       setShowSplash(false);
-    }, 3000); // 2 seconds
+    }, 3000); 
 
     return () => clearTimeout(timer);
   }, []);

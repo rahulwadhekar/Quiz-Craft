@@ -388,7 +388,6 @@
   box-shadow: 0 6px 22px rgba(40, 58, 107, 0.9);
 }
 
-/* Scrollbar for dark theme */
 .dark-theme .scorecard::-webkit-scrollbar {
   width: 6px;
 }

@@ -52,7 +52,6 @@
   }
 }
 
-/* Fade In Entrance */
 @keyframes fadeIn {
   from {
     opacity: 0;

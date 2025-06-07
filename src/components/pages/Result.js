@@ -21,7 +21,6 @@ function Result() {
   const [summary, setSummary] = useState("");
   const [showSummaryPreview, setShowSummaryPreview] = useState(false);
 
-  // Dialog state
   const [dialog, setDialog] = useState({ show: false, title: "", message: "", onConfirm: null });
 
   useEffect(() => {
@@ -91,7 +90,6 @@ ${pdfText.slice(0, 1500).replace(/\s+/g, " ")}`;
 
         setAnswer(aiText);
 
-        // Parse questions
         const lines = aiText.split("\n").filter(Boolean);
         const questions = [];
         let current = {};
@@ -226,7 +224,6 @@ ${pdfText.slice(0, 1500).replace(/\s+/g, " ")}`;
         )}
       </div>
 
-      {/* Summary Section */}
       <div className="summary-section">
         <h3>📄 Summary</h3>
         <textarea readOnly rows={10} value={summary} className="summary-textarea" />
@@ -244,7 +241,6 @@ ${pdfText.slice(0, 1500).replace(/\s+/g, " ")}`;
         </div>
       )}
 
-      {/* Dialog Box */}
       {dialog.show && (
         <div className="dialog-backdrop" onClick={closeDialog}>
           <div className="dialog-box" onClick={(e) => e.stopPropagation()}>

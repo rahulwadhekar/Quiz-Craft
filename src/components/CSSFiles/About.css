@@ -106,7 +106,7 @@ body.dark-theme .feature-list li {
 }
 
 body.dark-theme .feature-list li:hover {
-  color: #4ea1f7; /* lighter blue hover */
+  color: #4ea1f7; 
 }
 
 body.dark-theme a {

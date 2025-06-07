@@ -101,7 +101,6 @@ function Home() {
 
       <button onClick={handleSubmit}>Submit</button>
 
-      {/* Custom Dialog Box */}
       {showDialog && (
         <div className="dialog-backdrop">
           <div className="dialog-box">
